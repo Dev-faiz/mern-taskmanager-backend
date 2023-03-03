@@ -27,12 +27,12 @@ app.use(express.urlencoded({ extended:false }));
 app.use(cors(
     {
         origin: ["http://localhost:3000",
-                "taskManagerApp.onrender.com"
+                "https://taskManagerApp-api.onrender.com"
     
-    ],
-        credentials: true
+    ]
     }
 ));
+// backend uri  : https://taskManagerApp-api.onrender.com
 app.use("/api/tasks" ,taskRoutes);
 
 // const logger = (req , res , next ) =>{
